@@ -1,0 +1,110 @@
+body {
+    background-color: #1b2a49;
+    color: #f0f0f0; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    justify-items: center;
+}
+
+.card-link {
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    background-color: #34495e;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    color: inherit;
+    width: 100%;
+    max-width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    background-image: url(images/night-sky.jpeg);
+    background-size: cover;
+}
+
+.card-link:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.card-link h2 {
+    font-size: 1.6rem;
+    color: #ecf0f1;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #9dcaff;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(157, 202, 255, 0.3);
+}
+
+h4 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: white;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 0.25rem;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: #aad4ff;
+    font-weight: 600;
+    margin: 1rem;
+}
+
+p {
+    color: #e0e0e0;
+    margin: 1rem;
+}
+
+footer {
+    background-color: #34495e;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+.footer-nav {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
